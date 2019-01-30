@@ -162,8 +162,6 @@ class DefaultApiAsyncHelper(client: TransportClient, config: SwaggerConfig) exte
 
     if (method == null) throw new Exception("Missing required parameter 'method' when calling DefaultApi->transactionsPost")
 
-    if (amount == null) throw new Exception("Missing required parameter 'amount' when calling DefaultApi->transactionsPost")
-
     queryParams += "method" -> method.toString
     queryParams += "amount" -> amount.toString
     mobile match {
